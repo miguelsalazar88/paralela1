@@ -4,6 +4,7 @@
 * Ejercicio: Compilacion por Separado
 * Presentado por: Miguel Salazar di Colloredo
 **************************************************************/
+// Prueba
 
 #include <stdio.h>
 #include <stdlib.h>
