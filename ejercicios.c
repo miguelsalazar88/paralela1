@@ -4,7 +4,6 @@
 * Ejercicio: Compilacion por Separado
 * Presentado por: Miguel Salazar di Colloredo
 **************************************************************/
-// Prueba
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -97,8 +96,14 @@ void matrizRandom(int n){
 // 8. Programa que genera dos matrices aleatorias de tamanio N x N, las suma y
 // presenta el resultado.
 
-*****Hacer el metodo imprimirMatriz() y agregarlo a
-*****sumaMatricesRandom() para imprimir las 3 matrices.
+void imprimirMatriz(int N, int matriz[N][N]){
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n");
+    }    
+}
 
 void sumaMatricesRandom(int n){
 
@@ -114,11 +119,14 @@ void sumaMatricesRandom(int n){
             matrizA[i][j] = rand() % 10;
             matrizB[i][j] = rand() % 10;
             matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
-            printf("%d ", matrizC[i][j]);
-
         }
-        printf("\n");
     }
+    printf("Matriz 1: \n");
+    imprimirMatriz(n, matrizA);
+    printf("Matriz 2: \n");
+    imprimirMatriz(n, matrizB);
+    printf("Resultado de la suma: \n");
+    imprimirMatriz(n, matrizC);
 }
 
 
