@@ -49,6 +49,7 @@ void producto(){
     scanf("%d", &b);
 
     int p = a * b;
+    printf("Resultado: \n");
     printf("El producto de %d y %d es igual a: %d\n", a, b, p);
 }
 
@@ -58,12 +59,12 @@ void aniosSemanasDias(){
     printf("Por favor ingrese el número de días: ");
     scanf("%d", &dias);
 
-
     int anios = dias/365;
     int resto = dias % 365;
     int semanas = resto / 7;
     resto = resto % 7;
-    printf("Anios   = %d \nSemanas = %d \nDias    = %d \n", anios, semanas, resto);
+    printf("\nResultado: \n");
+    printf("\tAnios   = %d \n\tSemanas = %d \n\tDias    = %d \n", anios, semanas, resto);
 }
 
 // 3. Programa que calcula la distancia entre dos puntos.
@@ -81,11 +82,13 @@ void distancia(){
     scanf("%f", &y2);
 
     float distancia = sqrt( pow((x2-x1),2) + pow((y2-y1),2) );
-    printf("La distancia entre los puntos es: %.4f \n", distancia);
+    printf("\nResultado: \n");
+    printf("\nLa distancia entre los puntos es: %.4f \n", distancia);
 }
 
 // 4. Programa que imprime los primeros diez numeros naturales.
 void numNaturales(){
+    printf("\nResultado: \n");
 
     for (int i = 0; i < 10; i++){
         printf("\t%d", (i+1));
@@ -106,6 +109,7 @@ void trianguloAsteriscos(){
         printf("Valor errado!Reinicie el programa.\n");
     }
     else{
+        printf("\nResultado: \n");
         char string[14] = "*";
 
         for (int i = 0; i < n; i++){
@@ -130,6 +134,7 @@ void matrizUnos(){
     }
 
     else{
+        printf("\nResultado: \n");
         int matriz[n][n];
 
         for (int i = 0; i < n; i++){
@@ -158,8 +163,10 @@ void matrizRandom(){
     }
 
     else{
+
         srand(time(NULL)); //Semilla random
         int matriz[n][n];
+        printf("\nResultado: \n");
         
         for(int i = 0; i < n; i++){   
             for(int j = 0; j < n; j++){
@@ -190,6 +197,7 @@ void sumaMatricesRandom(){
         int matrizA[n][n];
         int matrizB[n][n];
         int matrizC[n][n];
+        printf("\nResultado: \n");
 
         srand(time(NULL)); //Semilla random
         for(int i = 0; i < n; i++){
@@ -231,6 +239,7 @@ void restaMatricesRandom(){
         int matrizB[n][n];
         int matrizC[n][n];
         srand(time(NULL)); //Semilla random
+        printf("\nResultado: \n");
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
@@ -272,6 +281,7 @@ void productoMatricesRandom(){
         int matrizB[n][n];
         int matrizC[n][n];
         srand(time(NULL)); //Semilla random
+        printf("\nResultado: \n");
         
         //Asignación de valores random para matrizA y matrizB
         for(int i = 0; i < n; i++){
