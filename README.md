@@ -38,14 +38,14 @@ git clone https://github.com/miguelsalazar88/paralela1.git
 cd paralela1
 ```
 
-3. Escribir el siguiente comando para ejecutar el Makefile:
+3. Ingresar el siguiente comando para ejecutar el Makefile:
 ```
-    make principal
+make principal
 ```
 
-4. Acto seguido, escribir el comando:
+4. Acto seguido, escribir el comando para ejecutar el programa:
 ```
-    ./principal
+./principal
 ```
 
 El programa debería mostrar un menú de opciones para que el usuario elija.
