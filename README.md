@@ -14,7 +14,9 @@ En este repositorio se encuentran los siguientes archivos:
 
 1. principal.c
 2. modulo.c
-2. interfaz.h
+3. interfaz.h
+4. Makefile
+
 
 # Requisitos:
 
@@ -24,14 +26,26 @@ En este repositorio se encuentran los siguientes archivos:
 
 # Instrucciones: 
 
-1. En terminal, escribir el siguiente comando:
+1. En la terminal, una vez ubicado en el directorio deseado para 
+ubicar los archivos, descargar el repositorio con el comando:
+
 ```
-make principal
+git clone https://github.com/miguelsalazar88/paralela1.git
 ```
 
-2. Acto seguido, escribir el comando:
+2. Ubicarse en el directorio que contiene los archivos mediante el comando:
 ```
-principal
+cd paralela1
+```
+
+3. Escribir el siguiente comando para ejecutar el Makefile:
+```
+    make principal
+```
+
+4. Acto seguido, escribir el comando:
+```
+    ./principal
 ```
 
 El programa debería mostrar un menú de opciones para que el usuario elija.
